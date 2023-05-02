@@ -13,9 +13,4 @@ public class ScholaryApplication {
 		SpringApplication.run(ScholaryApplication.class, args);
 	}
 
-	@GetMapping("/")
-	public String index() {
-		return "Hello World!";
-	}
-
 }
