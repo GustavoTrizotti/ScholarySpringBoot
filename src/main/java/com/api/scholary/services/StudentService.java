@@ -37,4 +37,10 @@ public class StudentService {
     public Optional<StudentModel> findById(UUID id) {
         return studentRepository.findById(id);
     }
+
+    @Transactional
+    public void delete(StudentModel studentModel) {
+        studentRepository.delete(studentModel);
+    }
+
 }
